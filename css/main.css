@@ -663,7 +663,7 @@ footer{
 @media (max-width: 576px) {
  
   header{
-    width:96%;
+    width:100%;
     height: 4%;
   }
   header input,label{
@@ -694,7 +694,7 @@ footer{
     position: relative;
     overflow: hidden;
     margin-top:-10px;
-    width: 100%;
+    width: 105%;
     
   }
 .hero .hero-content{
@@ -717,7 +717,7 @@ footer{
     cursor: pointer;
     position: absolute;
     top: -0.1rem;
-    right: 1.2rem;
+    right: 1.9rem;
     z-index: 999;
   }
 nav .menu{
