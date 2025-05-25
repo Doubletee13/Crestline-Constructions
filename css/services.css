@@ -541,7 +541,7 @@ footer{
   font-size: 0.7rem;
 }
 .newsletter button{
-  bottom:48px
+  bottom:2px
 }
 .footer{
   display: grid;
@@ -592,6 +592,9 @@ footer{
   .bridge-construction img{
     width: 100%;
     height: 60%;
+  }
+  .newsletter button{
+    bottom:2px;
   }
   .footer{
     display: grid;
