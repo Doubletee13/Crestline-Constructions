@@ -943,6 +943,7 @@ nav .menu{
   .footer {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-left: 2px;
     
   }
   .footer h3{
