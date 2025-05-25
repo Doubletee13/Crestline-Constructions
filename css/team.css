@@ -495,6 +495,9 @@ footer{
   gap:30px;
   padding-bottom: 100px;
 }
+.number{
+  color:white;
+}
 footer{
   width: 100%;
   padding-bottom: 50px;
@@ -579,6 +582,9 @@ footer{
   }
   .grid-container .site-supervisor img{
     height: 47%;
+  }
+  .newsletter button{
+    bottom:2px;
   }
   .footer{
     display: grid;

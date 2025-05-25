@@ -640,6 +640,9 @@ footer{
   color: white;
   padding: 30px 20px;
 }
+.number{
+  color:white;
+}
 .altura{
   color: #fdbe33;
 }
@@ -917,16 +920,8 @@ nav .menu{
     margin-left: -7px;
   }
 .newsletter button{
-    position: absolute;
-    bottom:3px;
-    right:3px;
-    font-size: 0.6rem;
-    padding: 4px 3px;
-    width: 30%;
-}
-.newsletter input{
-  width: 100%;
-  padding:4px 10px 4px 10px;
+    bottom:2px;
+    
 }
 .newsletter input::placeholder{
   font-size: 0.9rem;

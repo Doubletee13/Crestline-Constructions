@@ -392,6 +392,9 @@ footer{
   height: 1px;
  
 }
+.number{
+  color:white;
+}
 .copyright{
   color: white;
   padding: 30px 20px;

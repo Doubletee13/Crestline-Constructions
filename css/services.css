@@ -330,9 +330,7 @@ footer{
   font-size: 1.2rem;
 }
 
-/* .nav-footer ul li a:visited{
-  color:white;
-} */
+
 .nav-footer ul{
   list-style-type:square;
   line-height: 2;
@@ -358,6 +356,9 @@ footer{
   margin: 0 auto;
   height: 1px;
  
+}
+.number{
+  color:white;
 }
 .copyright{
   color: white;
