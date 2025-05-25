@@ -254,6 +254,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
+  gap: 45px;
 }
 .office-contact h3{
  color:#fdbe33;
@@ -356,7 +357,7 @@ footer{
 }
 
 .nav-footer a:hover {
-  color: #ccc; /* Optional: light gray on hover */
+  color: #ccc; 
 }
 
 .nav-footer h3{
@@ -364,9 +365,7 @@ footer{
   font-size: 1.2rem;
 }
 
-/* .nav-footer ul li a:visited{
-  color:white;
-} */
+
 .nav-footer ul{
   list-style-type:square;
   line-height: 2;

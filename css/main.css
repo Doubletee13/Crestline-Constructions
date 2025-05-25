@@ -112,7 +112,7 @@ input,button,textarea{
   position: relative;
   overflow: hidden;
   margin-top: 170px;
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),url(/img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -498,6 +498,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
+  gap: 45px;
   
 }
 .office-contact h3{
@@ -687,7 +688,7 @@ footer{
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg);
     background-size: cover;
     background-position: center;
     height: 50vh;

@@ -197,6 +197,9 @@ figure img {
 .seventh-image{
   height:52%;
 }
+.eight-image{
+  height: 52%;
+}
 figcaption {
   text-align: center;
   margin-top: 0.5rem;
@@ -219,6 +222,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 50px;
+  gap:45px;
 }
 .office-contact h3{
  color:#fdbe33;
