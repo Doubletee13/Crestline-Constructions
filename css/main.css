@@ -941,7 +941,6 @@ nav .menu{
   height: auto;
 }
   .footer {
-    margin-left: -30px;
     grid-template-columns: 1fr;
     gap: 2rem;
     
@@ -1089,7 +1088,7 @@ nav .menu{
   }
 .newsletter button{
     position: absolute;
-    bottom:45px;
+    bottom:2px;
 }
   .footer {
     grid-template-columns: 1fr 1fr;
@@ -1167,7 +1166,7 @@ nav .menu{
 }
   .footer {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 45px;
   }
 }
  
