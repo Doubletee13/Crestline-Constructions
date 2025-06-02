@@ -169,7 +169,15 @@ figure:nth-child(8) { animation-delay: 0.8s; }
     transform: translateY(0);
   }
 }
-
+.ceo-figure{
+  width:50%;
+  margin:0 auto;
+}
+.ceo-bio{
+  text-align:justify;
+  margin:20px 50px;
+  line-height: 1.6;
+}
 /* Optional: Image and caption styles */
 figure{
   width: 100%;
@@ -468,6 +476,9 @@ footer{
 .contact-heading p{
   font-size: 1rem;
 }
+.ceo-figure{
+  width:90%;
+}
 .grid-container{
   display: grid;
   grid-template-columns: 1fr;
@@ -527,6 +538,9 @@ footer{
   .contact-heading p{
     font-size: 1.2rem;
   }
+  .ceo-figure{
+    width:90%;
+  }
   .grid-container{
     display: grid;
     grid-template-columns: 1fr  ;
@@ -569,6 +583,12 @@ footer{
     width: 700px;
     margin-left: 150px;
     margin-top: 30px;
+  }
+  .ceo-figure{
+    width:90%;
+  }
+  .figcap{
+    height:30%;
   }
   .grid-container{
     width: 100%;
