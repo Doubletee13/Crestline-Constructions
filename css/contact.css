@@ -30,6 +30,10 @@ header h1{
   font-size: 2rem;
   text-shadow:2px 2px 5px rgb(65, 62, 62);
 }
+.header-h1 a{
+  text-decoration: none;
+  color: #030c1e;
+}
 header p{
   line-height: 1.5;
   font-size: clamp( 0.85rem,2.2vh, 1rem);
@@ -191,7 +195,7 @@ input,button,textarea{
 }
 .location{
   background-color: #030f27;
-  padding: 51px 20px;
+  padding: 63px 20px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -245,6 +249,20 @@ textarea::placeholder {
   align-items: center;
   margin-top: 50px;
 }
+.visuals{
+  margin-top: 5rem;
+}
+.visuals h3{
+  text-align: center;
+  color: #030c1e;
+  font-size: 2.5rem;
+}
+.visuals iframe{
+  width: 100%;
+  border: none;
+  height: 50vh;
+  
+}
 footer{
   margin-top:150px;
   background-color: #030c1e;;
@@ -288,11 +306,7 @@ footer{
   margin-left: 5px;
   color: white;
 }
-.service-footer ul li:hover{
-  color: #fdbe33;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
+
 
 .services-hr{
   width: 20%;
@@ -340,7 +354,7 @@ footer{
   border-color: #fdbe33;
   color: #fdbe33;
   position: absolute;
-  bottom:54px;
+  bottom:84px;
   right:1px;
 }
 .newsletter button:hover{
