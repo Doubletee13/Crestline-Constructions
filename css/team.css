@@ -174,13 +174,22 @@ figure:nth-child(8) { animation-delay: 0.8s; }
   }
 }
 .ceo-figure{
-  width:50%;
+  width:40%;
   margin:0 auto;
+}
+.ceo-figure img{
+  width:100%;
 }
 .ceo-bio{
   text-align:justify;
   margin:20px 50px;
   line-height: 1.6;
+}
+details{
+  text-align: center;
+}
+details p{
+  text-align: justify;
 }
 /* Optional: Image and caption styles */
 figure{
@@ -320,7 +329,7 @@ footer{
   border-color: #fdbe33;
   color: #fdbe33;
   position: absolute;
-  bottom:54px;
+  bottom:85px;
   right:1px;
 }
 .newsletter button:hover{
