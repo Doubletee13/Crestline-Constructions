@@ -140,7 +140,7 @@ input,button,textarea{
 /* Grid layout */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   column-gap: 2rem;
   row-gap: 0;
@@ -235,7 +235,7 @@ figcaption:hover{
 }
 
 footer{
-  margin-top:-100px;
+  margin-top:-80px;
   background-color: #030c1e;;
   position: relative;
 }
