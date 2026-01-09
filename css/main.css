@@ -177,90 +177,68 @@ input,button,textarea{
 
 
 
-.expert_work{
-  display: flex;
-  padding:1.875rem;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 250px;
-  gap: 20px;
+/* Container */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  background-color: #030f27;
+/* Shared card */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 2.5rem 2rem;
+  min-height: 260px;
+
+  font-family: inherit;
+}
+
+/* Icons */
+.feature img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Text */
+.feature-text h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.feature-text p {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 480px;
+  text-align: left; /* important */
+}
+
+/* Color variants */
+.feature-dark {
+  background-color: #030f27;
   color: #fdbe33;
-  font-size: clamp(1.12rem,2.2vh,1.5rem);
-  font-weight: 400;
-  
 }
-.expert_work img{
-  background-color: #fdbe33;
-  border-radius: 50px;
-  min-width:70px;
-  height: auto;
-}
-.expert_work_text h3{
-  color: #fdbe33;
-  font-size: 1.5625rem;
-  font-weight: 600;
-}
-.expert_work_text p{
-  text-align: justify;
-  margin-top: 12px;
-  font-size: 1.125rem;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
- 
-}
-.quality_work{
-  display: flex;
-  align-items:center;
-  gap:20px;
-  padding:1.875rem;
-  font-size: clamp(1.12rem,2.2vh,1.5rem);
+
+.feature-dark img {
   background-color: #fdbe33;
 }
-.quality_work img{
-  background-color:#030f27;
-  border-radius: 50px;
-  min-width:70px;
-  height: auto;
+
+.feature-light {
+  background-color: #fdbe33;
+  color: #030f27;
 }
-.quality_work h3{
-  color:#030f27;
-  font-size: 1.5625rem;
-  font-weight: 600;
-}
-.quality_work p{
-  text-align: justify;
-  margin-top: 10px;
-  font-size: 1.125rem;
-  
-}
-.support{
-  display: flex;
-  align-items:center;
-  gap:20px;
-  padding:1.875rem;
-  font-size: clamp(1.12rem,2.2vh,1.5rem);
+
+.feature-light img {
   background-color: #030f27;
 }
-.support img{
-  background-color:#fdbe33;
-  border-radius: 50px;
-  min-width:70px;
-  height: auto;
-}
-.support h3{
-  color: #fdbe33;
-  font-size: 1.5625rem;
-  font-weight: 600;
-}
-.support p{
-  color: #fdbe33;
-  text-align: justify;
-  margin-top: 12px;
-  font-size: 1.125rem;
-}
+
 .first_container{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
