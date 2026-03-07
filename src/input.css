@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* ─── Base ─────────────────────────────────────────── */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply font-body text-navy bg-white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+
+    img {
+        @apply block max-w-full h-auto;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+}
+
+/* ─── Components ────────────────────────────────────── */
+@layer components {
+
+    /* Navbar */
+    .nav-link {
+        @apply relative text-sm font-heading font-medium tracking-widest text-white/80 uppercase transition-colors duration-300 hover:text-gold pb-1;
+    }
+
+    .nav-link::after {
+        content: '';
+        @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        @apply w-full;
+    }
+
+    .nav-link.active {
+        @apply text-gold;
+    }
+
+    /* Buttons */
+    .btn-primary {
+        @apply inline-block px-8 py-3 bg-gold text-navy font-heading font-semibold tracking-wider uppercase text-sm border-2 border-gold transition-all duration-300 hover:bg-transparent hover:text-gold;
+    }
+
+    .btn-outline {
+        @apply inline-block px-8 py-3 bg-transparent text-white font-heading font-semibold tracking-wider uppercase text-sm border-2 border-white transition-all duration-300 hover:bg-gold hover:text-navy hover:border-gold;
+    }
+
+    .btn-dark {
+        @apply inline-block px-8 py-3 bg-navy text-gold font-heading font-semibold tracking-wider uppercase text-sm border-2 border-navy transition-all duration-300 hover:bg-gold hover:text-navy hover:border-gold;
+    }
+
+    /* Section label */
+    .section-label {
+        @apply font-heading text-gold uppercase tracking-[0.3em] text-sm font-medium;
+    }
+
+    .section-title {
+        @apply font-heading text-navy text-4xl md:text-5xl font-bold leading-tight mt-2;
+    }
+
+    .section-title-white {
+        @apply font-heading text-white text-4xl md:text-5xl font-bold leading-tight mt-2;
+    }
+
+    /* Inner page hero */
+    .inner-hero {
+        @apply relative flex items-center justify-center overflow-hidden bg-navy;
+        min-height: 320px;
+    }
+
+    /* Footer columns */
+    .footer-heading {
+        @apply font-heading text-gold uppercase tracking-wider text-base font-semibold mb-4 pb-2 border-b border-gold/30;
+    }
+
+    /* Stat counter */
+    .stat-card {
+        @apply flex flex-col items-center justify-center p-8 text-center;
+    }
+
+    .stat-number {
+        @apply font-heading text-5xl md:text-6xl font-bold;
+    }
+
+    .stat-label {
+        @apply font-heading uppercase tracking-widest text-xs mt-2 font-medium;
+    }
+}
+
+/* ─── Hero Slideshow ────────────────────────────────── */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hero content animation */
+.slide-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease 0.5s, transform 0.8s ease 0.5s;
+}
+
+.hero-slide.active .slide-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ─── Scroll Reveal ─────────────────────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ─── Mobile Menu ───────────────────────────────────── */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#mobile-menu.open {
+    max-height: 400px;
+}
+
+/* ─── Custom Scrollbar ──────────────────────────────── */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-navy;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gold rounded-full;
+}
+
+/* ─── Team card hover ───────────────────────────────── */
+.team-card .overlay {
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.team-card:hover .overlay {
+    opacity: 1;
+}
+
+/* ─── Service card hover ────────────────────────────── */
+.service-card .caption {
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .caption {
+    transform: translateY(0);
+}
+
+/* ─── Testimonial slider ────────────────────────────── */
+.testimonial-slide {
+    display: none;
+}
+
+.testimonial-slide.active {
+    display: flex;
+}

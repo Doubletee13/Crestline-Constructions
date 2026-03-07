@@ -1,399 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Crestline Constructions provides expert construction and engineering services across residential, commercial, and infrastructure projects including airport runway expansions. Based in the USA with European expertise."
-    />
-    <meta name="author" content="Crestline Constructions" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no">
-    <title>Crestline | Construction & Engineering</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <section class="header">
-        <div class="header-h1">
-          <a href="/"><h1>Crestline Constructions</h1></a>
-        </div>
-        <div class="header-contact-info">
-          <div class="hours">
-            <div class="hours-img">
-              <img
-                src="img/calendar_40x40.png"
-                alt="Calender logo"
-                width="40"
-                height="40"
-              />
-            </div>
-            <div class="hours-info">
-              <p>Opening Hour</p>
-              <p>Mon - Fri, 8:00 - 9:00</p>
-            </div>
-          </div>
-          <div class="call">
-            <div class="call-img">
-              <img
-                src="img/communication_40x40.png"
-                alt="landline logo"
-                width="40"
-                height="40"
-              />
-            </div>
-            <div class="call-info">
-              <p>Call Us</p>
-              <p>+1 972 512 8449</p>
-            </div>
-          </div>
-          <div class="email">
-            <div class="email-img">
-              <img
-                src="img/mail_40x40.png"
-                alt="Email logo"
-                width="40"
-                height="40"
-              />
-            </div>
-            <div class="email-info">
-              <p>Email Us</p>
-              <p>info@crestlineconstructions.com</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <nav>
-        <h2 class="menu">MENU</h2>
-        <input type="checkbox" id="toggle-menu" />
-        <label for="toggle-menu" class="hamburger">&#9776;</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Crestline Constructions – expert construction and engineering: residential, commercial, infrastructure. 25 years of excellence." />
+  <meta name="author" content="Crestline Constructions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Crestline Constructions | Building the Future</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="src/output.css" />
+</head>
 
-        <ul class="nav-menu">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/services/">SERVICES</a></li>
-          <li><a href="/team/">TEAM</a></li>
-          <li><a href="/contact/">CONTACT</a></li>
+<body class="font-body text-navy">
+
+  <!-- ═══════════════════════════════════ TOP BAR -->
+  <div class="bg-navy-light hidden lg:block">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between text-sm text-white/70">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
+          </svg>
+          Mon – Fri &nbsp;|&nbsp; 8:00 – 17:00
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          info@crestlineconstructions.com
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.96 21 3 13.04 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+        </svg>
+        <span class="text-gold font-semibold">+1 972 512 8449</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ NAVBAR -->
+  <header id="navbar" class="sticky top-0 z-50 bg-navy shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-gold rounded flex items-center justify-center">
+            <svg class="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-heading text-white font-bold text-xl tracking-wide leading-none block">CRESTLINE</span>
+            <span class="font-heading text-gold text-xs tracking-[0.3em] uppercase">Constructions</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/" class="nav-link active">Home</a>
+          <a href="/services/" class="nav-link">Services</a>
+          <a href="/team/" class="nav-link">Team</a>
+          <a href="/contact/" class="nav-link">Contact</a>
+          <a href="/contact/" class="btn-primary text-xs py-2.5 px-5">Get a Quote</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span class="hamburger-line block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="hamburger-line block w-4 h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-navy-light border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
+        <a href="/" class="nav-link py-2.5 border-b border-white/5">Home</a>
+        <a href="/services/" class="nav-link py-2.5 border-b border-white/5">Services</a>
+        <a href="/team/" class="nav-link py-2.5 border-b border-white/5">Team</a>
+        <a href="/contact/" class="nav-link py-2.5 border-b border-white/5">Contact</a>
+        <a href="/contact/" class="btn-primary text-center mt-3 text-xs">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════ HERO SLIDESHOW -->
+  <section id="hero" class="relative h-screen overflow-hidden">
+    <!-- Slides -->
+    <div class="hero-slide active"
+      style="background: linear-gradient(135deg, rgba(3,12,30,0.82) 0%, rgba(3,15,39,0.55) 100%), url('img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 slide-content">
+          <p class="section-label mb-4">Trusted Since 2001</p>
+          <h1 class="font-heading text-white text-5xl md:text-7xl font-bold leading-tight max-w-3xl">
+            Building the <span class="text-gold">Future</span> Today
+          </h1>
+          <p class="text-white/80 text-lg md:text-xl max-w-xl mt-6 leading-relaxed font-body font-light">
+            Expert construction and engineering services for residential, commercial, and infrastructure projects.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-10">
+            <a href="/contact/" class="btn-primary">Start Your Project</a>
+            <a href="/services/" class="btn-outline">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide"
+      style="background: linear-gradient(135deg, rgba(3,12,30,0.85) 0%, rgba(3,15,39,0.5) 100%), url('img/pexels-thirdman-8482865.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 slide-content">
+          <p class="section-label mb-4">25 Years of Excellence</p>
+          <h1 class="font-heading text-white text-5xl md:text-7xl font-bold leading-tight max-w-3xl">
+            Precision &amp; <span class="text-gold">Integrity</span> in Every Build
+          </h1>
+          <p class="text-white/80 text-lg md:text-xl max-w-xl mt-6 leading-relaxed font-body font-light">
+            From concept to completion, we deliver craftsmanship that stands the test of time.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-10">
+            <a href="/contact/" class="btn-primary">Get a Free Quote</a>
+            <a href="/team/" class="btn-outline">Meet the Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide"
+      style="background: linear-gradient(135deg, rgba(3,12,30,0.85) 0%, rgba(3,15,39,0.5) 100%), url('img/man-with-helmet-working-logistic.jpg') center/cover no-repeat;">
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 slide-content">
+          <p class="section-label mb-4">Experts You Can Trust</p>
+          <h1 class="font-heading text-white text-5xl md:text-7xl font-bold leading-tight max-w-3xl">
+            Your Vision, <span class="text-gold">Our</span> Commitment
+          </h1>
+          <p class="text-white/80 text-lg md:text-xl max-w-xl mt-6 leading-relaxed font-body font-light">
+            Transparent communication, on-time delivery, and a team that genuinely cares about your project.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-10">
+            <a href="/contact/" class="btn-primary">Contact Us Now</a>
+            <a href="/services/" class="btn-outline">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Controls (Dots) -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center justify-center gap-3 z-30">
+      <button
+        class="hero-dot w-3 h-3 rounded-full bg-gold border-2 border-gold transition-all duration-300 pointer-events-auto"
+        data-slide="0" aria-label="Slide 1"></button>
+      <button
+        class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 pointer-events-auto"
+        data-slide="1" aria-label="Slide 2"></button>
+      <button
+        class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 pointer-events-auto"
+        data-slide="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Prev Arrow -->
+    <button id="hero-prev"
+      class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 bg-white/10 hover:bg-gold/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 group pointer-events-auto"
+      aria-label="Previous slide">
+      <svg class="w-5 h-5 text-white group-hover:text-navy cursor-pointer pointer-events-none" fill="none"
+        stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Next Arrow -->
+    <button id="hero-next"
+      class="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 z-30 w-12 h-12 bg-white/10 hover:bg-gold/80 rounded-full flex items-center justify-center backdrop-blur-sm transition-all duration-300 group pointer-events-auto"
+      aria-label="Next slide">
+      <svg class="w-5 h-5 text-white group-hover:text-navy cursor-pointer pointer-events-none" fill="none"
+        stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 right-12 hidden md:flex flex-col items-center gap-2">
+      <span class="text-white/50 text-xs tracking-widest uppercase rotate-90 origin-center">Scroll</span>
+      <div class="w-px h-12 bg-gradient-to-b from-white/50 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ FEATURES STRIP -->
+  <section class="grid grid-cols-1 md:grid-cols-3">
+    <article class="flex items-center gap-6 bg-navy-light p-10 group hover:bg-navy transition-colors duration-300">
+      <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+        <img src="img/engineer.png" alt="Expert Worker" class="w-9 h-9 object-contain" / loading="lazy">
+      </div>
+      <div>
+        <h3 class="font-heading text-gold text-xl font-semibold mb-2">Expert Workers</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Skilled and committed to quality, our experts bring precision
+          and dedication to every project.</p>
+      </div>
+    </article>
+    <article class="flex items-center gap-6 bg-gold p-10 group hover:bg-gold-dark transition-colors duration-300">
+      <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+        <img src="img/factory.png" alt="Quality Work" class="w-9 h-9 object-contain" / loading="lazy">
+      </div>
+      <div>
+        <h3 class="font-heading text-navy text-xl font-semibold mb-2">Quality Work</h3>
+        <p class="text-navy/80 text-sm leading-relaxed">Built with expert skills and premium materials — reflecting our
+          commitment to durability and lasting value.</p>
+      </div>
+    </article>
+    <article class="flex items-center gap-6 bg-navy-light p-10 group hover:bg-navy transition-colors duration-300">
+      <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+        <img src="img/help (1).png" alt="24/7 Support" class="w-9 h-9 object-contain" / loading="lazy">
+      </div>
+      <div>
+        <h3 class="font-heading text-gold text-xl font-semibold mb-2">24/7 Support</h3>
+        <p class="text-white/70 text-sm leading-relaxed">Always available day or night — keeping your project on track,
+          efficient, and stress-free.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ═══════════════════════════════════ ABOUT SECTION -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Image -->
+      <div class="relative reveal">
+        <img src="img/Gigantic_building.JPG" alt="Crestline construction project"
+          class="w-full h-[500px] object-cover shadow-2xl" / loading="lazy">
+        <!-- Experience badge -->
+        <div
+          class="absolute -bottom-8 -right-6 bg-gold text-navy w-36 h-36 rounded-full flex flex-col items-center justify-center shadow-xl">
+          <span class="font-heading text-5xl font-bold leading-none">25</span>
+          <span
+            class="font-heading text-xs uppercase tracking-widest mt-1 text-center leading-tight">Years<br>Experience</span>
+        </div>
+      </div>
+      <!-- Text -->
+      <div class="reveal">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title mt-2 mb-6">Welcome to<br><span class="text-gold">Crestline Constructions</span></h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          At Crestline Constructions, we transform spaces with precision, integrity, and a passion for excellence. With
+          25 years of experience in residential and commercial construction, we deliver top-tier craftsmanship tailored
+          to your vision.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          We believe that building is more than just construction — it's about creating lasting value. From concept to
+          completion, Crestline partners with you every step of the way, whether it's a renovation or a new build.
+        </p>
+        <!-- Checkpoints -->
+        <ul class="space-y-3 mb-10">
+          <li class="flex items-center gap-3 text-navy font-medium"><span
+              class="w-5 h-5 bg-gold rounded-full flex items-center justify-center flex-shrink-0"><svg
+                class="w-3 h-3 text-navy" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></span>Transparent Communication</li>
+          <li class="flex items-center gap-3 text-navy font-medium"><span
+              class="w-5 h-5 bg-gold rounded-full flex items-center justify-center flex-shrink-0"><svg
+                class="w-3 h-3 text-navy" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></span>On-Time Delivery Guaranteed</li>
+          <li class="flex items-center gap-3 text-navy font-medium"><span
+              class="w-5 h-5 bg-gold rounded-full flex items-center justify-center flex-shrink-0"><svg
+                class="w-3 h-3 text-navy" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></span>Licensed &amp; Fully Insured</li>
         </ul>
-      </nav>
-
-      
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <p>We Are Trusted</p>
-          <h2>For Your Dream Project</h2>
-           <a href="/contact/" class="connect-btn">Connect</a>
-        </div>
-      </section>
-     <section class="features">
-  <article class="feature feature-dark">
-    <img src="img/engineer.png" alt="Expert Worker">
-    <div class="feature-text">
-      <h3>Expert Worker</h3>
-      <p>
-        Skilled and committed to quality work, our experts bring precision, dedication, and care to every project for exceptional results.      </p>
+        <a href="/contact/" class="btn-dark">Get in Touch</a>
+      </div>
     </div>
-  </article>
+  </section>
 
-  <article class="feature feature-light">
-    <img src="img/factory.png" alt="Quality Work">
-    <div class="feature-text">
-      <h3>Quality Work</h3>
-      <p>
-        Quality is our foundation, built with expert skills and premium materials. Each project reflects our commitment to durability, precision, and lasting value.
-      </p>
+  <!-- ═══════════════════════════════════ STATS SECTION -->
+  <section id="stats" class="py-20 bg-navy relative overflow-hidden">
+    <!-- Background texture -->
+    <div class="absolute inset-0 opacity-5"
+      style="background-image: url('img/important-information-three-men-protective-helmet-looking-laptop-with-interest-while-standing-construction-site-day.jpg'); background-size: cover; background-position: center;">
     </div>
-  </article>
-
-  <article class="feature feature-dark">
-    <img src="img/help (1).png"  alt="24/7 Support">
-    <div class="feature-text">
-      <h3>24/7 Support</h3>
-      <p>
-        Always available to assist you day or night, providing reliable 24/7 support to keep your project on track, efficient, responsive, and stress-free.
-      </p>
+    <div class="relative max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="section-label">Our Track Record</p>
+        <h2 class="section-title-white mt-2">Numbers That <span class="text-gold">Speak</span></h2>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 rounded-2xl overflow-hidden">
+        <div
+          class="stat-card bg-white/5 hover:bg-white/10 transition-colors duration-300 border-r border-white/10 border-b lg:border-b-0">
+          <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 mx-auto mb-4 flex-shrink-0">
+            <img src="img/successful-architect-with-safety-helmet.jpg" alt="Expert Workers"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <span class="stat-number text-gold" data-target="980">0</span>
+          <span class="text-gold">+</span>
+          <p class="stat-label text-white/60">Expert Workers</p>
+        </div>
+        <div class="stat-card bg-gold hover:bg-gold-dark transition-colors duration-300 border-b lg:border-b-0">
+          <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/30 mx-auto mb-4 flex-shrink-0">
+            <img src="img/smiling-happy-businessman-looking-camera.jpg" alt="Happy Clients"
+              class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <span class="stat-number text-navy" data-target="485">0</span>
+          <span class="text-navy font-heading text-5xl font-bold">+</span>
+          <p class="stat-label text-navy/70">Happy Clients</p>
+        </div>
+        <div class="stat-card bg-white/5 hover:bg-white/10 transition-colors duration-300 border-r border-white/10">
+          <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-gold/30 mx-auto mb-4 flex-shrink-0">
+            <img src="img/Gigantic_building.JPG" alt="Projects" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <span class="stat-number text-gold" data-target="789">0</span>
+          <span class="text-gold">+</span>
+          <p class="stat-label text-white/60">Completed Projects</p>
+        </div>
+        <div class="stat-card bg-gold hover:bg-gold-dark transition-colors duration-300">
+          <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/30 mx-auto mb-4 flex-shrink-0">
+            <img src="img/IMG_1399.AVIF" alt="Running" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <span class="stat-number text-navy" data-target="890">0</span>
+          <span class="text-navy font-heading text-5xl font-bold">+</span>
+          <p class="stat-label text-navy/70">Running Projects</p>
+        </div>
+      </div>
     </div>
-  </article>
-</section>
+  </section>
 
-      <section class="about">
-        <figure class="gigantic-building-container">
-          <img
-            src="img/Gigantic_building.JPG"
-            width="570"
-            height="806"
-            alt="Gigantic building"
-          />
-          <figcaption></figcaption>
-        </figure>
-        <div class="about-text">
-          <h3>Welcome to Crestline Constructions</h3>
-          <h2>25 Years Of Experience</h2>
-          <p>
-            At Crestline Constructions, we transform spaces with precision,
-            integrity, and a passion for excellence. With years of experience in
-            residential and commercial construction, we deliver top-tier
-            craftsmanship tailored to your vision. Our team is dedicated to
-            quality results, transparent communication, and on-time delivery.
-          </p>
-          <p>
-            We believe that building is more than just construction—it's about
-            creating lasting value. From concept to completion, Crestline
-            Constructions partners with you every step of the way. Whether it's
-            a renovation or a new build, trust us to bring your project to life
-            with care and expertise.
-          </p>
-          
-          <a href="/contact/" class="button-style">Contact Us</a>
+  <!-- ═══════════════════════════════════ SERVICES PREVIEW -->
+  <section class="py-24 bg-gray-50 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title mt-2">Our Core <span class="text-gold">Services</span></h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="service-card relative overflow-hidden group reveal">
+          <img src="img/IMG_1406.AVIF" alt="Bridge Construction"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy">
+          <div class="caption absolute bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-sm p-5">
+            <h3 class="font-heading text-gold text-lg font-semibold">Bridge Construction</h3>
+            <p class="text-white/80 text-sm mt-1">Modern, safe, and durable bridge engineering solutions.</p>
+          </div>
+          <div class="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors duration-300"></div>
         </div>
-      </section>
-      <section class="achievements">
-        <div class="achievements-one-container">
-          <div class="achievements-one-a">
-            <figure class="achievements-image-container">
-              <img
-                src="img/engineer_logo_500x500.png"
-                width="100"
-                height="100"
-                alt="engineer logo"
-              />
-            </figure>
-            <div class="achievement-details">
-              <h3>980</h3>
-              <p>EXPERT WORKERS</p>
+        <div class="service-card relative overflow-hidden group reveal">
+          <img src="img/IMG_1417.JPG" alt="Building Construction"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy">
+          <div class="caption absolute bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-sm p-5">
+            <h3 class="font-heading text-gold text-lg font-semibold">Building Construction</h3>
+            <p class="text-white/80 text-sm mt-1">Residential and commercial structures built to last.</p>
+          </div>
+          <div class="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors duration-300"></div>
+        </div>
+        <div class="service-card relative overflow-hidden group reveal">
+          <img src="img/IMG_1399.AVIF" alt="Runway Construction"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" / loading="lazy">
+          <div class="caption absolute bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-sm p-5">
+            <h3 class="font-heading text-gold text-lg font-semibold">Runway Construction</h3>
+            <p class="text-white/80 text-sm mt-1">Precision airport runway build and expansion services.</p>
+          </div>
+          <div class="absolute inset-0 bg-navy/20 group-hover:bg-navy/10 transition-colors duration-300"></div>
+        </div>
+      </div>
+      <div class="text-center mt-10 reveal">
+        <a href="/services/" class="btn-dark">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ TESTIMONIALS -->
+  <section class="py-24 px-6" style="background: linear-gradient(180deg, #0b132b, #030c1e);">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14 reveal">
+        <p class="section-label">Client Stories</p>
+        <h2 class="section-title-white mt-2">What Our Clients <span class="text-gold">Say</span></h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <article
+          class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:-translate-y-2 transition-transform duration-300 reveal flex flex-col">
+          <svg class="w-8 h-8 text-gold mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+          </svg>
+          <p class="text-white/80 text-sm leading-relaxed flex-1">Reliable, efficient, and transparent throughout the
+            entire project. A+ service — could not be happier with the result.</p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-white/10">
+            <img src="img/portrait-american-woman.jpg" alt="Maya L."
+              class="w-10 h-10 rounded-full object-cover border-2 border-gold object-top" / loading="lazy">
+            <div>
+              <p class="font-heading text-gold text-sm font-semibold">Maya L.</p>
+              <p class="text-white/50 text-xs">Commercial Client</p>
             </div>
           </div>
-          <div class="achievements-one-b">
-            <figure class="achievements-image-container">
-              <img
-                src="img/engineer_logo_500x500.png"
-                width="100"
-                height="100"
-                alt=""
-              />
-            </figure>
-            <div class="achievement-details">
-              <h3>485</h3>
-              <p>HAPPY CLIENTS</p>
+        </article>
+        <!-- Card 2 -->
+        <article
+          class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:-translate-y-2 transition-transform duration-300 reveal flex flex-col">
+          <svg class="w-8 h-8 text-gold mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+          </svg>
+          <p class="text-white/80 text-sm leading-relaxed flex-1">They handled every detail flawlessly. The workmanship
+            is outstanding — my home looks absolutely incredible.</p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-white/10">
+            <img src="img/portrait-handsome-mature-man.jpg" alt="Rick M."
+              class="w-10 h-10 rounded-full object-cover border-2 border-gold" / loading="lazy">
+            <div>
+              <p class="font-heading text-gold text-sm font-semibold">Rick M.</p>
+              <p class="text-white/50 text-xs">Homeowner</p>
             </div>
           </div>
-        </div>
-        <div class="achievements-two-container">
-          <div class="achievements-two-a">
-            <figure class="achievements-image-container">
-              <img
-                src="img/engineer_logo_500x500.png"
-                width="100"
-                height="100"
-                alt=""
-              />
-            </figure>
-            <div class="achievement-details">
-              <h3>789</h3>
-              <p>COMPLETED PROJECTS</p>
+        </article>
+        <!-- Card 3 -->
+        <article
+          class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:-translate-y-2 transition-transform duration-300 reveal flex flex-col">
+          <svg class="w-8 h-8 text-gold mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+          </svg>
+          <p class="text-white/80 text-sm leading-relaxed flex-1">From design to finish, the team delivered with
+            precision and care. Highly recommended to any developer.</p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-white/10">
+            <img src="img/worldface-british-guy-white-background.jpg" alt="Daniel K."
+              class="w-10 h-10 rounded-full object-cover border-2 border-gold" / loading="lazy">
+            <div>
+              <p class="font-heading text-gold text-sm font-semibold">Daniel K.</p>
+              <p class="text-white/50 text-xs">Property Developer</p>
             </div>
           </div>
-          <div class="achievements-two-b">
-            <figure class="achievements-image-container">
-              <img
-                src="img/engineer_logo_500x500.png"
-                width="100"
-                height="100"
-                alt="engineer logo"
-              />
-            </figure>
-            <div class="achievement-details">
-              <h3>890</h3>
-              <p>RUNNING PROJECTS</p>
+        </article>
+        <!-- Card 4 -->
+        <article
+          class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:-translate-y-2 transition-transform duration-300 reveal flex flex-col">
+          <svg class="w-8 h-8 text-gold mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+          </svg>
+          <p class="text-white/80 text-sm leading-relaxed flex-1">Professional, punctual, exceeded expectations. Our
+            dream home truly became a reality thanks to Crestline.</p>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-white/10">
+            <img src="img/smiley-elder-woman-standing-kitchen.jpg" alt="Karen D."
+              class="w-10 h-10 rounded-full object-cover border-2 border-gold object-top" / loading="lazy">
+            <div>
+              <p class="font-heading text-gold text-sm font-semibold">Karen D.</p>
+              <p class="text-white/50 text-xs">Renovation Client</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="testimonials-container">
-  <div class="testimonials">
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <article class="testimonial">
-      <figure class="quote">
-        <img src="img/format_quote_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png"
-             alt="Quotation mark">
-      </figure>
-
-      <p class="testimonial-text">
-        Reliable, efficient, and transparent throughout the entire project. A+ service.
+  <!-- ═══════════════════════════════════ CTA BANNER -->
+  <section class="bg-gold py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <h2 class="font-heading text-navy text-4xl md:text-5xl font-bold mb-4">Ready to Build Your Vision?</h2>
+      <p class="text-navy/70 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">Let's discuss your project. Our team of
+        expert engineers and builders is ready to bring your ideas to life with the precision and quality you deserve.
       </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact/" class="btn-dark">Get a Free Quote</a>
+        <a href="tel:+19725128449"
+          class="inline-flex items-center gap-2 px-8 py-3 border-2 border-navy text-navy font-heading font-semibold uppercase text-sm tracking-wider hover:bg-navy hover:text-gold transition-all duration-300">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.96 21 3 13.04 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+          </svg>
+          Call Us Now
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <figure class="client">
-        <img src="img/portrait-american-woman.jpg"
-             alt="Portrait of Maya L.">
-        <figcaption>Maya L., Commercial Client</figcaption>
-      </figure>
-    </article>
+  <!-- ═══════════════════════════════════ FOOTER -->
+  <footer class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-white/10">
 
-    <article class="testimonial">
-      <figure class="quote">
-        <img src="img/format_quote_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png"
-             alt="Quotation mark">
-      </figure>
-
-      <p class="testimonial-text">
-        They handled every detail flawlessly. The workmanship is outstanding.
-      </p>
-
-      <figure class="client">
-        <img src="img/portrait-handsome-mature-man.jpg"
-             alt="Portrait of Rick M.">
-        <figcaption>Rick M., Homeowner</figcaption>
-      </figure>
-    </article>
-
-    <article class="testimonial">
-      <figure class="quote">
-        <img src="img/format_quote_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png"
-             alt="Quotation mark">
-      </figure>
-
-      <p class="testimonial-text">
-        From design to finish, the team delivered with precision. Highly recommend.
-      </p>
-
-      <figure class="client">
-        <img src="img/worldface-british-guy-white-background.jpg"
-             alt="Portrait of Daniel K.">
-        <figcaption>Daniel K., Property Developer</figcaption>
-      </figure>
-    </article>
-
-    <article class="testimonial">
-      <figure class="quote">
-        <img src="img/format_quote_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png"
-             alt="Quotation mark">
-      </figure>
-
-      <p class="testimonial-text">
-        Professional, punctual, exceeded expectations; our dream home truly became a reality.
-      </p>
-
-      <figure class="client">
-        <img src="img/smiley-elder-woman-standing-kitchen.jpg"
-             alt="Portrait of Karen D.">
-        <figcaption>Karen D., Renovation Client</figcaption>
-      </figure>
-    </article>
-
-  </div>
-</section>
-
-    </main>
-    <footer>
-      <section class="footer">
-        <div class="office-contact">
-          <h3>Office Contact</h3>
-          <hr class="contact-hr" />
-          <div class="contact-details">
-            <img src="img/pin-8-xxl.png" width="20" height="20" alt="" />
-            <p>
-              123 S Broad St, Philadelphia,<br />
-              PA 19109
-            </p>
+        <!-- Col 1: Brand -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-9 h-9 bg-gold rounded flex items-center justify-center">
+              <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-heading text-white font-bold text-lg tracking-wide leading-none block">CRESTLINE</span>
+              <span class="font-heading text-gold text-xs tracking-[0.25em] uppercase">Constructions</span>
+            </div>
           </div>
-          <div class="contact-details">
-            <img src="img/phone-xxl.png" width="20" height="20" alt="" />
-            <p class="number">+1 972 512 8449</p>
-          </div>
-          <div class="contact-details">
-            <img src="img/email-3-xxl.png" width="20" height="20" alt="" />
-            <p>info@crestlineconstructions.com</p>
+          <p class="text-white/60 text-sm leading-relaxed mb-5">Building the future with precision, integrity, and
+            passion. 25 years of trusted construction excellence.</p>
+          <div class="flex gap-3">
+            <a href="https://www.linkedin.com/in/robert-marcus-85a4903a3" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 bg-white/10 hover:bg-gold hover:text-navy rounded-full flex items-center justify-center text-white/70 transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://x.com/crestlinecon?s=21" target="_blank" rel="noopener noreferrer"
+              class="w-9 h-9 bg-white/10 hover:bg-gold hover:text-navy rounded-full flex items-center justify-center text-white/70 transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="service-footer">
-          <h3>Services Area</h3>
-          <hr class="services-hr" />
-          <ul>
-            <li>Building construction</li>
-            <li>House Renovation</li>
-            <li>Architecture Design</li>
-            <li>Runway Construction</li>
-            <li>Painting</li>
+
+        <!-- Col 2: Contact -->
+        <div>
+          <h3 class="footer-heading">Office Contact</h3>
+          <ul class="space-y-4 text-sm text-white/60">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              123 S Broad St, Philadelphia, PA 19109
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.96 21 3 13.04 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.26.2 2.47.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+              </svg>
+              +1 972 512 8449
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+              info@crestlineconstructions.com
+            </li>
           </ul>
         </div>
-        <div class="nav-footer">
-          <h3>Pages</h3>
-          <hr class="nav-hr" />
-          <ul>
-            
-            <li><a href="/team/">Team</a></li>
-            <li><a href="/services/">Services</a></li>
-            <li><a href="/contact/">Contact Us</a></li>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h3 class="footer-heading">Services</h3>
+          <ul class="space-y-2 text-sm text-white/60">
+            <li class="hover:text-gold transition-colors cursor-pointer">Building Construction</li>
+            <li class="hover:text-gold transition-colors cursor-pointer">House Renovation</li>
+            <li class="hover:text-gold transition-colors cursor-pointer">Architecture Design</li>
+            <li class="hover:text-gold transition-colors cursor-pointer">Runway Construction</li>
+            <li class="hover:text-gold transition-colors cursor-pointer">Road &amp; Bridge Works</li>
           </ul>
         </div>
-        <div class="newsletter">
-          <h3>Newsletter</h3>
-          <hr class="nav-hr" />
-          <p>Drop your contact information to receive our newsletters</p>
-          <form action="https://formspree.io/f/xblovrzg" method="POST">
-            <input
-              type="text"
-              name="email"
-              placeholder="Email here"
-              class="email"
-            />
-            <button>SUBMIT</button>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <h3 class="footer-heading">Newsletter</h3>
+          <p class="text-white/60 text-sm leading-relaxed mb-4">Stay updated with our latest projects and news.</p>
+          <form action="https://formspree.io/f/xblovrzg" method="POST" class="flex flex-col gap-2">
+            <input type="email" name="email" placeholder="Your email address" required
+              class="w-full px-4 py-2.5 bg-white/10 border border-white/20 text-white placeholder-white/40 text-sm focus:outline-none focus:border-gold transition-colors" />
+            <button type="submit" class="btn-primary py-2.5 text-xs text-center">Subscribe</button>
           </form>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <p class="text-white/50 text-xs">Pages</p>
+            <div class="flex gap-4 mt-2 text-sm">
+              <a href="/team/" class="text-white/60 hover:text-gold transition-colors">Team</a>
+              <a href="/services/" class="text-white/60 hover:text-gold transition-colors">Services</a>
+              <a href="/contact/" class="text-white/60 hover:text-gold transition-colors">Contact</a>
+            </div>
+          </div>
         </div>
-      </section>
-      <section>
+      </div>
 
-         <!-- Add this div inside your footer, alongside other footer sections -->
-<div class="social-footer">
-  <h3>Follow Us</h3>
-  <hr class="social-hr">
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/robert-marcus-85a4903a3" target="_blank" rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-      </svg>
-      <span>LinkedIn</span>
-    </a>
-    <a href="https://x.com/crestlinecon?s=21" target="_blank" rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-      </svg>
-      <span>X (Twitter)</span>
-    </a>
-  </div>
-</div>
+      <!-- Bottom bar -->
+      <div class="flex flex-col md:flex-row items-center justify-between pt-6 gap-4">
+        <p class="text-white/40 text-sm">&copy; 2026 <span class="text-gold">Crestline Constructions</span>. All rights
+          reserved.</p>
+        <p class="text-white/30 text-xs">Terms Of Use | Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Back to Top -->
+  <button id="back-to-top"
+    class="fixed bottom-8 right-8 z-50 w-12 h-12 bg-gold text-navy rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-gold-dark hover:-translate-y-1"
+    aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
 
+  <script src="main.js"></script>
+</body>
 
-
-
-        <div class="terms-footer">
-          <hr class="terms-hr" />
-          <h4 class="terms">Terms Of Use | Privacy Policy</h4>
-          <hr class="terms-hr" />
-        </div>
-        <div class="copyright">
-          <p>
-            &copy; 2026 <span class="altura">Crestline Constructions.</span> All
-            rights reserved.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="upward-arrow">
-          <a href="#top"
-            ><img
-              src="img/arrow_upward_24dp_030C1E_FILL0_wght400_GRAD0_opsz24.png"
-              width="24"
-              height="24"
-              alt="upward logo"
-          /></a>
-        </div>
-      </section>
-    </footer>
-  </body>
 </html>
