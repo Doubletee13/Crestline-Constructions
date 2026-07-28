@@ -178,14 +178,18 @@
     opacity: 1;
 }
 
-/* ─── Service card hover ────────────────────────────── */
+/* ─── Service card caption ──────────────────────────── */
+/* Captions are always visible on all screen sizes */
 .service-card .caption {
-    transform: translateY(100%);
+    transform: translateY(0);
     transition: transform 0.4s ease;
 }
 
-.service-card:hover .caption {
-    transform: translateY(0);
+/* On hover-capable devices, lift the caption slightly for a premium feel */
+@media (hover: hover) {
+    .service-card:hover .caption {
+        transform: translateY(-4px);
+    }
 }
 
 /* ─── Testimonial slider ────────────────────────────── */
